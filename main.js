@@ -22,12 +22,12 @@ async function getPost(postId) {
 async function getPokemon(pokemonId) {
     try {
         const r = await axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemonId}`);
-        console.log(r.data)
+        console.log(r.data);
     } catch (error) {
         console.log(error);
     }
 }
 
-// getPosts();
-// getPost(2);
+getPosts();
+getPost(2);
 getPokemon(1);
